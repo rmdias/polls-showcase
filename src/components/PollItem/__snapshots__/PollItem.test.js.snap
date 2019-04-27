@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PollItem /> toMatchSnapshot: Load <PollItem /> component 1`] = `
+<div>
+  <a
+    className="poll__item"
+    href="/questions/10"
+    onClick={[Function]}
+  >
+    <div
+      className="poll__item__area sc-kpOJdX ddRiWz"
+    >
+      <h4
+        className="poll__item__title"
+      >
+        <strong>
+          Game Genre
+        </strong>
+      </h4>
+      <span
+        className="sc-dxgOiQ fWGswn"
+      >
+        Published at 
+        27.05.2015 11:22:26
+      </span>
+      <p>
+        3
+         choices
+      </p>
+    </div>
+  </a>
+</div>
+`;

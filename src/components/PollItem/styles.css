@@ -1,0 +1,28 @@
+.poll__item {
+  width: 340px;
+  margin: .5%;
+}
+
+.poll__item__area {
+  margin: 0;
+}
+
+.poll__item__title, .poll__item p {
+  color: #333;
+  width: 100%;
+  display: inline-block;
+}
+
+.poll__item__title {
+  padding-bottom: 10px;
+}
+
+.poll__item p {
+  padding: 5px 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .poll__item {
+    width: 100%;
+  }
+}
