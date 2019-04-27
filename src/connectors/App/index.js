@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react'
-import { Provider } from 'react-redux'
 import PropTypes from 'prop-types'
-import { Theme } from 'luna-ui-lib'
+import { Provider } from 'react-redux'
+import { Route } from 'react-router-dom'
 import { ConnectedRouter } from 'connected-react-router'
 
-import { Route } from 'react-router-dom'
+import { Theme } from 'luna-ui-lib'
 
 // Connectors
 import Polls from 'connectors/Polls'
