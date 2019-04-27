@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PollDetail /> toMatchSnapshot: Loading 1`] = `
+<div>
+  <div
+    className="poll"
+  >
+    <a
+      className="back_to_polls"
+      href="/"
+      onClick={[Function]}
+    >
+      ◄ Back
+    </a>
+    <h1>
+      Question: 
+      Game Genre
+    </h1>
+    <div
+      className="poll__choices"
+    >
+      <div
+        onClick={[Function]}
+      >
+        <div
+          className="poll__choice_item false sc-kpOJdX ddRiWz"
+        >
+          <div>
+            <strong>
+              Strategy
+            </strong>
+          </div>
+          <div>
+            270
+             votes
+          </div>
+          <div>
+            14
+            %
+          </div>
+          <div
+            className="poll__choice_percentage"
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": 200,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "#b2e2bf",
+                    "fontSize": undefined,
+                    "height": "16px",
+                    "padding": "1px 2px",
+                    "width": 100,
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "#c7c7c7",
+                    "fontSize": undefined,
+                    "height": "16px",
+                    "padding": "1px 2px",
+                    "width": 100,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        <div
+          className="poll__choice_item false sc-dxgOiQ kRJcgL"
+        >
+          <div>
+            <strong>
+              Action
+            </strong>
+          </div>
+          <div>
+            409
+             votes
+          </div>
+          <div>
+            21
+            %
+          </div>
+          <div
+            className="poll__choice_percentage"
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": 200,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "#b2e2bf",
+                    "fontSize": undefined,
+                    "height": "16px",
+                    "padding": "1px 2px",
+                    "width": 120.47128129602356,
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "#c7c7c7",
+                    "fontSize": undefined,
+                    "height": "16px",
+                    "padding": "1px 2px",
+                    "width": 79.52871870397644,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        <div
+          className="poll__choice_item false sc-ckVGcZ EUALb"
+        >
+          <div>
+            <strong>
+              Shooter
+            </strong>
+          </div>
+          <div>
+            1195
+             votes
+          </div>
+          <div>
+            63
+            %
+          </div>
+          <div
+            className="poll__choice_percentage"
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": 200,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "#b2e2bf",
+                    "fontSize": undefined,
+                    "height": "16px",
+                    "padding": "1px 2px",
+                    "width": 163.13993174061434,
+                  }
+                }
+              />
+              <div
+                style={
+                  Object {
+                    "backgroundColor": "#c7c7c7",
+                    "fontSize": undefined,
+                    "height": "16px",
+                    "padding": "1px 2px",
+                    "width": 36.86006825938566,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
