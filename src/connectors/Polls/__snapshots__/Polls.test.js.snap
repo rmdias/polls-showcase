@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Polls /> toMatchSnapshot: Load <Polls /> as list of <PollItem /> 1`] = `
+<div>
+  <div
+    className="polls"
+  >
+    <h1>
+      Questions
+    </h1>
+    <div
+      className="polls_items"
+    >
+      <a
+        className="poll__item"
+        href="/questions/10"
+        onClick={[Function]}
+      >
+        <div
+          className="poll__item__area sc-dxgOiQ kRJcgL"
+        >
+          <h4
+            className="poll__item__title"
+          >
+            <strong>
+              Game Genre
+            </strong>
+          </h4>
+          <span
+            className="sc-ckVGcZ GYKlq"
+          >
+            Published at 
+            27.05.2015 11:22:26
+          </span>
+          <p>
+            3
+             choices
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Polls /> toMatchSnapshot: Loading 1`] = `
+<div>
+  <div
+    className="polls"
+  >
+    <h1>
+      Questions
+    </h1>
+    <div
+      className="polls__loader sc-kpOJdX jIxhBs"
+      kind="primary"
+      size={50}
+    />
+    <div
+      className="polls_items"
+    />
+  </div>
+</div>
+`;

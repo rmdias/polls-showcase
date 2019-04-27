@@ -1,0 +1,12 @@
+.polls {
+  padding-top: 40px;
+}
+
+.polls_items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.polls__loader {
+  margin: 0 auto;
+}
