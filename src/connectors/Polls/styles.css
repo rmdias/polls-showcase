@@ -1,5 +1,9 @@
 .polls {
-  padding-top: 40px;
+  padding: 40px 0;
+}
+
+.poll__create_new {
+  float: right;
 }
 
 .polls_items {

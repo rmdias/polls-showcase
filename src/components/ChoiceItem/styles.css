@@ -1,4 +1,4 @@
-.poll__choice_item {
+div .poll__choice_item {
   cursor: pointer;
   margin-bottom: 5px;
   display: flex;
@@ -6,12 +6,12 @@
   transition: all .25s ease;
 }
 
-.poll__choice_selected {
+.poll__choice_item.poll__choice_selected {
   box-shadow: 0 0 4px 3px #00bbce;
 }
 
 @media only screen and (max-width: 768px) {
-  .poll__choice_item {
+  div .poll__choice_item {
     flex-wrap: wrap;
   }
 

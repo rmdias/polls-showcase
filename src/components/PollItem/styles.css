@@ -1,9 +1,9 @@
 .poll__item {
-  width: 340px;
+  width: 32%;
   margin: .5%;
 }
 
-.poll__item__area {
+div.poll__item__area {
   margin: 0;
 }
 
