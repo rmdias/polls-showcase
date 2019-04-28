@@ -5,9 +5,10 @@ import { polls } from 'actions/polls'
 export default connect(
   (state, ownProps) => ({
     pollsList: _.get(state, 'polls.list', []),
-    loading: _.get(state, 'polls.loading', true)
+    loading: _.get(state, 'polls.loading', true),
+    hasMore: _.get(state, 'polls.hasMore', false)
   }),
   (dispatch) => ({
-    onFetchPolls: page => dispatch(polls.fetch.request())
+    onFetchPolls: page => dispatch(polls.fetch.request(page))
   })
 )

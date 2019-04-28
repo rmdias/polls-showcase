@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import InfiniteScroll from 'react-infinite-scroller'
 
 import { CircularLoader, Button } from 'luna-ui-lib'
 
@@ -18,13 +19,14 @@ class Polls extends PureComponent {
   }
 
   static propTypes = {
+    hasMore: PropTypes.bool,
     loading: PropTypes.bool,
     pollsList: PropTypes.array,
     onFetchPolls: PropTypes.func
   }
 
   componentDidMount() {
-    this.props.onFetchPolls()
+    this.props.onFetchPolls(1)
   }
 
   render() {
@@ -49,6 +51,14 @@ class Polls extends PureComponent {
 
         <div className="polls_items">
           { Items }
+          <InfiniteScroll
+            pageStart={1}
+            loadMore={(e) => this.props.onFetchPolls(e)}
+            hasMore={this.props.hasMore}
+            loader={loader}
+          >
+            { Items }
+          </InfiniteScroll>
         </div>
       </div>
     )
