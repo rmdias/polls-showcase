@@ -5,6 +5,18 @@ exports[`<Polls /> toMatchSnapshot: Load <Polls /> as list of <PollItem /> 1`] =
   <div
     className="polls"
   >
+    <a
+      className="poll__create_new"
+      href="/new"
+      onClick={[Function]}
+    >
+      <button
+        className="sc-jKJlTe hiEsAV"
+      >
+         
+        Create
+      </button>
+    </a>
     <h1>
       Questions
     </h1>
@@ -17,7 +29,7 @@ exports[`<Polls /> toMatchSnapshot: Load <Polls /> as list of <PollItem /> 1`] =
         onClick={[Function]}
       >
         <div
-          className="poll__item__area sc-dxgOiQ kRJcgL"
+          className="poll__item__area sc-hMqMXs iUcHQE"
         >
           <h4
             className="poll__item__title"
@@ -27,7 +39,7 @@ exports[`<Polls /> toMatchSnapshot: Load <Polls /> as list of <PollItem /> 1`] =
             </strong>
           </h4>
           <span
-            className="sc-ckVGcZ GYKlq"
+            className="sc-kEYyzF dRxZbp"
           >
             Published at 
             27.05.2015 11:22:26
@@ -48,11 +60,23 @@ exports[`<Polls /> toMatchSnapshot: Loading 1`] = `
   <div
     className="polls"
   >
+    <a
+      className="poll__create_new"
+      href="/new"
+      onClick={[Function]}
+    >
+      <button
+        className="sc-kpOJdX hUOHoI"
+      >
+         
+        Create
+      </button>
+    </a>
     <h1>
       Questions
     </h1>
     <div
-      className="polls__loader sc-kpOJdX jIxhBs"
+      className="polls__loader sc-ckVGcZ jDTthv"
       kind="primary"
       size={50}
     />

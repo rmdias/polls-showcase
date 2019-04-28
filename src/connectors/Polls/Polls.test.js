@@ -27,7 +27,9 @@ describe('<Polls />', () => {
     const store = mockStore(initialState)
     const component = (
       <Theme>
-        <Polls store={store}/>
+        <Router>
+          <Polls store={store}/>
+        </Router>
       </Theme>
     )
 

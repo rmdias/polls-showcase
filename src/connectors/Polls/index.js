@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { CircularLoader } from 'luna-ui-lib'
+import { Link } from 'react-router-dom'
+
+import { CircularLoader, Button } from 'luna-ui-lib'
 
 import NoResults from 'components/NoResults'
 import PollItem from 'components/PollItem'
@@ -35,6 +37,12 @@ class Polls extends PureComponent {
 
     return (
       <div className="polls">
+
+        <Link to="/new" className="poll__create_new">
+          <Button size="large" kind="primary">
+            Create
+          </Button>
+        </Link>
         <h1>Questions</h1>
         { showLoader && loader }
         { showNoResults && <NoResults /> }
