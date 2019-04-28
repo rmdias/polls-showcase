@@ -23,33 +23,6 @@ exports[`<Polls /> toMatchSnapshot: Load <Polls /> as list of <PollItem /> 1`] =
     <div
       className="polls_items"
     >
-      <a
-        className="poll__item"
-        href="/questions/10"
-        onClick={[Function]}
-      >
-        <div
-          className="poll__item__area sc-hMqMXs iUcHQE"
-        >
-          <h4
-            className="poll__item__title"
-          >
-            <strong>
-              Game Genre
-            </strong>
-          </h4>
-          <span
-            className="sc-kEYyzF dRxZbp"
-          >
-            Published at 
-            27.05.2015 11:22:26
-          </span>
-          <p>
-            3
-             choices
-          </p>
-        </div>
-      </a>
       <div>
         <a
           className="poll__item"
@@ -57,7 +30,7 @@ exports[`<Polls /> toMatchSnapshot: Load <Polls /> as list of <PollItem /> 1`] =
           onClick={[Function]}
         >
           <div
-            className="poll__item__area sc-kkGfuU fUAkuM"
+            className="poll__item__area sc-hMqMXs iUcHQE"
           >
             <h4
               className="poll__item__title"
@@ -67,7 +40,7 @@ exports[`<Polls /> toMatchSnapshot: Load <Polls /> as list of <PollItem /> 1`] =
               </strong>
             </h4>
             <span
-              className="sc-iAyFgw kqMYeq"
+              className="sc-kEYyzF dRxZbp"
             >
               Published at 
               27.05.2015 11:22:26

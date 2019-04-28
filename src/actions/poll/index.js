@@ -1,6 +1,7 @@
 import { action, createRequestTypes } from 'actions/utils'
 
 export const POLL = {
+  CLEAN: 'FETCH_CLEAN_POLL',
   SAVE: createRequestTypes('SAVE_POLL'),
   FETCH: createRequestTypes('FETCH_POLL'),
   UPDATE: createRequestTypes('UPDATE_POLL')
@@ -14,6 +15,7 @@ export const poll =  {
     loading: toState => action(POLL.SAVE.LOADING, { toState })
   },
   fetch: {
+    clean: _ => action(POLL.CLEAN),
     request: questionId => action(POLL.FETCH.REQUEST, { questionId }),
     success: response => action(POLL.FETCH.SUCCESS, { response }),
     failure: (error, requests) => action(POLL.FETCH.FAILURE, { error, requests }),

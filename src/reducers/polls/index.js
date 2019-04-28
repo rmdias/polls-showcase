@@ -18,8 +18,7 @@ export default (state = initialState, action) => {
     }
     case POLLS.FETCH.SUCCESS: {
       const pollsState = _.cloneDeep(state)
-      const headerLink = action.response.headers.link.split(',')
-      const nextPage = _.find(headerLink, item => item.indexOf('rel="next"') > -1)
+      const nextPage = action.response.headers.link.indexOf('rel="next"') > -1
 
       if (nextPage) {
         pollsState.hasMore = true
@@ -40,6 +39,9 @@ export default (state = initialState, action) => {
       pollsState.loading = action.toState
 
       return pollsState
+    }
+    case POLLS.CLEAN: {
+      return initialState
     }
     default:
       return state

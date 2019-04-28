@@ -16,6 +16,7 @@ class PollDetail extends PureComponent {
     loading: PropTypes.bool,
     poll: PropTypes.object,
     onVote: PropTypes.func,
+    onCleanPoll: PropTypes.func,
     onFetchPoll: PropTypes.func
   }
 
@@ -46,6 +47,10 @@ class PollDetail extends PureComponent {
 
   componentDidMount() {
     this.props.onFetchPoll(this.props.match.params.questionId)
+  }
+
+  componentWillUnmount() {
+    this.props.onCleanPoll()
   }
 
   render() {

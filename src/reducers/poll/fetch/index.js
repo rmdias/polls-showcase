@@ -1,6 +1,11 @@
 import _ from 'lodash'
 import { POLL } from 'actions/poll'
 
+const initialState = {
+  data: { },
+  loading: false
+}
+
 export default (state, action) => {
   switch (action.type) {
     case POLL.FETCH.REQUEST: {
@@ -28,6 +33,9 @@ export default (state, action) => {
       pollState.loading = action.toState
 
       return pollState
+    }
+    case POLL.CLEAN: {
+      return initialState
     }
     default:
       return state

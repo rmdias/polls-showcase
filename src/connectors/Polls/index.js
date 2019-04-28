@@ -22,11 +22,16 @@ class Polls extends PureComponent {
     hasMore: PropTypes.bool,
     loading: PropTypes.bool,
     pollsList: PropTypes.array,
-    onFetchPolls: PropTypes.func
+    onFetchPolls: PropTypes.func,
+    onCleanPolls: PropTypes.func
   }
 
   componentDidMount() {
     this.props.onFetchPolls(1)
+  }
+
+  componentWillUnmount() {
+    this.props.onCleanPolls()
   }
 
   render() {
@@ -50,7 +55,6 @@ class Polls extends PureComponent {
         { showNoResults && <NoResults /> }
 
         <div className="polls_items">
-          { Items }
           <InfiniteScroll
             pageStart={1}
             loadMore={(e) => this.props.onFetchPolls(e)}
