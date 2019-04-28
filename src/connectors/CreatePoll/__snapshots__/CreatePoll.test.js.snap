@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreatePoll /> toMatchSnapshot 1`] = `
+<div>
+  <form
+    className="poll"
+    onSubmit={[Function]}
+  >
+    <a
+      className="back_to_polls"
+      href="/"
+      onClick={[Function]}
+    >
+      ◄ Back
+    </a>
+    <h1>
+      Create a new question
+    </h1>
+    <div
+      className="sc-kpOJdX ddRiWz"
+    >
+      <div
+        className="sc-bwzfXH bVXEpg"
+      >
+        <input
+          className="sc-bdVaJa cgeXdS"
+          defaultValue=""
+          icon="rocket"
+          id="question"
+          kind="primary"
+          name="question"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Question"
+          required={true}
+          type="text"
+        />
+        <span
+          className="sc-htpNat eeDWLn"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-rocket fa-w-16 "
+            data-icon="rocket"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505.1 19.1C503.8 13 499 8.2 492.9 6.9 460.7 0 435.5 0 410.4 0 307.2 0 245.3 55.2 199.1 128H94.9c-18.2 0-34.8 10.3-42.9 26.5L2.6 253.3c-8 16 3.6 34.7 21.5 34.7h95.1c-5.9 12.8-11.9 25.5-18 37.7-3.1 6.2-1.9 13.6 3 18.5l63.6 63.6c4.9 4.9 12.3 6.1 18.5 3 12.2-6.1 24.9-12 37.7-17.9V488c0 17.8 18.8 29.4 34.7 21.5l98.7-49.4c16.3-8.1 26.5-24.8 26.5-42.9V312.8c72.6-46.3 128-108.4 128-211.1.1-25.2.1-50.4-6.8-82.6zM400 160c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </span>
+        <div
+          className="sc-bxivhb inrsMJ"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-dxgOiQ kRJcgL"
+    >
+      <div
+        className="sc-bwzfXH bVXEpg"
+      >
+        <input
+          className="poll__control_panel__input sc-bdVaJa uNrHb"
+          defaultValue=""
+          icon=""
+          id="choice0"
+          kind="primary"
+          name="choice0"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Choice"
+          required={true}
+          type="text"
+        />
+        <div
+          className="sc-bxivhb inrsMJ"
+        />
+      </div>
+      <div
+        className="sc-bwzfXH bVXEpg"
+      >
+        <input
+          className="poll__control_panel__input sc-bdVaJa uNrHb"
+          defaultValue=""
+          icon=""
+          id="choice1"
+          kind="primary"
+          name="choice1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Choice"
+          required={true}
+          type="text"
+        />
+        <div
+          className="sc-bxivhb inrsMJ"
+        />
+      </div>
+      <div
+        className="poll__control_panel"
+      >
+        <button
+          className="poll__control_panel__button sc-ckVGcZ wEfPS"
+          onClick={[Function]}
+          type="button"
+        >
+           
+           + 
+        </button>
+      </div>
+    </div>
+    <button
+      className="poll__voting_button sc-eNQAEJ cJTrN"
+      type="submit"
+    >
+      <span
+        className="sc-hMqMXs dmrzLB"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "
+      <svg version=\\"1.1\\"
+        xmlns=\\"http://www.w3.org/2000/svg\\"
+        x=\\"0px\\" y=\\"0px\\"
+        width=\\"25px\\" height=\\"25px\\" style=\\"top:5px; left:2px; margin:0; position: absolute;\\"
+        viewBox=\\"0 0 50 50\\"
+        style=\\"enable-background:new 0 0 50 50;\\">
+      <path fill=\\"#fff\\"
+        d=\\"M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z\\"
+        transform=\\"rotate(217.187 25 25)\\">
+        <animateTransform
+          attributeType=\\"xml\\"
+          attributeName=\\"transform\\"
+          type=\\"rotate\\" from=\\"0 25 25\\" to=\\"360 25 25\\" dur=\\"0.6s\\"
+          repeatCount=\\"indefinite\\"></animateTransform>
+      </path>
+    </svg>",
+          }
+        }
+      />
+       
+      save
+    </button>
+  </form>
+</div>
+`;

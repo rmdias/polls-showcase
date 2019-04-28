@@ -1,0 +1,41 @@
+.poll__control_panel {
+  display: flex;
+  justify-content: center;
+}
+
+.poll__control_panel__input {
+  margin-bottom: 10px;
+}
+
+.poll__control_panel__button {
+  margin: 0 5px;
+}
+
+.poll__feedback_box {
+  left: 50%;
+  z-index: 10;
+  top: -100px;
+  width: 500px;
+  max-width: 100%;
+  position: fixed;
+  margin-left: -250px;
+  animation: slideInOut 2000ms ease forwards;
+}
+
+@keyframes slideInOut {
+  0% {
+    top: -100px;
+  }
+
+  30% {
+    top: 83px;
+  }
+
+  90% {
+    top: 83px;
+  }
+
+  100% {
+    top: -100px;
+  }
+}

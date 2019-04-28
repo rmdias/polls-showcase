@@ -9,6 +9,7 @@ import { Theme } from 'luna-ui-lib'
 // Connectors
 import Polls from 'connectors/Polls'
 import PollDetail from 'connectors/PollDetail'
+import CreatePoll from 'connectors/CreatePoll'
 
 import connector from './connector'
 
@@ -26,6 +27,7 @@ class App extends PureComponent {
           <div className="container">
             <Route exact path="/" component={() => <Polls />} />
             <Route exact path="/questions/:questionId" component={() => <PollDetail />} />
+            <Route exact path="/new" component={() => <CreatePoll />} />
           </div>
         </ConnectedRouter>
         </Theme>
