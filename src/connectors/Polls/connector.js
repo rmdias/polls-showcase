@@ -8,7 +8,7 @@ export default connect(
     loading: _.get(state, 'polls.loading', true),
     hasMore: _.get(state, 'polls.hasMore', false)
   }),
-  (dispatch) => ({
+  dispatch => ({
     onCleanPolls: _ => dispatch(polls.clean()),
     onFetchPolls: page => dispatch(polls.fetch.request(page))
   })

@@ -1,13 +1,14 @@
 .poll__item {
   width: 32%;
-  margin: .5%;
+  margin: 0.5%;
 }
 
 div.poll__item__area {
   margin: 0;
 }
 
-.poll__item__title, .poll__item p {
+.poll__item__title,
+.poll__item p {
   color: #333;
   width: 100%;
   display: inline-block;

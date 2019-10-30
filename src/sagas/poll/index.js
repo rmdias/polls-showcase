@@ -3,7 +3,8 @@ import { takeLatest, put, call } from 'redux-saga/effects'
 
 import { poll, POLL } from 'actions/poll'
 
-const REQUEST_URL = 'https://polls.apiblueprint.org'
+const REQUEST_URL =
+  'https://cors-anywhere.herokuapp.com/https://polls.apiblueprint.org'
 
 function fetchPoll(method, url, data = {}) {
   return axios.request({
@@ -20,7 +21,11 @@ function* fetchPollSaga(action) {
   try {
     yield put(poll.fetch.loading(true))
 
-    const pollRequest = yield call(fetchPoll, 'GET', `${REQUEST_URL}/questions/${action.questionId}`)
+    const pollRequest = yield call(
+      fetchPoll,
+      'GET',
+      `${REQUEST_URL}/questions/${action.questionId}`
+    )
 
     yield put(poll.fetch.success(pollRequest.data))
   } catch (error) {
@@ -34,7 +39,11 @@ function* votingSaga(action) {
   try {
     yield put(poll.update.loading(true))
 
-    const votingRequest = yield call(fetchPoll, 'POST', `${REQUEST_URL}${action.choiceId}`)
+    const votingRequest = yield call(
+      fetchPoll,
+      'POST',
+      `${REQUEST_URL}${action.choiceId}`
+    )
 
     yield put(poll.update.success(votingRequest.data))
   } catch (error) {
@@ -48,7 +57,12 @@ function* createSaga(action) {
   try {
     yield put(poll.save.loading(true))
 
-    const createRequest = yield call(fetchPoll, 'POST', `${REQUEST_URL}/questions`, action.pollData)
+    const createRequest = yield call(
+      fetchPoll,
+      'POST',
+      `${REQUEST_URL}/questions`,
+      action.pollData
+    )
 
     yield put(poll.save.success(createRequest.data))
   } catch (error) {

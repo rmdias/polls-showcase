@@ -2,7 +2,7 @@ import _ from 'lodash'
 import { POLLS } from 'actions/polls'
 
 const initialState = {
-  list: [ ],
+  list: [],
   hasMore: false,
   loading: false
 }

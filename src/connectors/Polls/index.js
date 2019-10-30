@@ -37,31 +37,38 @@ class Polls extends PureComponent {
   render() {
     const showLoader = this.props.loading && !this.props.pollsList.length
     const showNoResults = !this.props.loading && !this.props.pollsList.length
-    const loader = <CircularLoader className="polls__loader" key={0} kind="primary" size={50} border={1} />
+    const loader = (
+      <CircularLoader
+        className="polls__loader"
+        key={0}
+        kind="primary"
+        size={50}
+        border={1}
+      />
+    )
     const Items = this.props.pollsList.map(poll => {
       return <PollItem key={JSON.stringify(poll)} poll={poll}></PollItem>
     })
 
     return (
       <div className="polls">
-
         <Link to="/new" className="poll__create_new">
           <Button size="large" kind="primary">
             Create
           </Button>
         </Link>
         <h1>Questions</h1>
-        { showLoader && loader }
-        { showNoResults && <NoResults /> }
+        {showLoader && loader}
+        {showNoResults && <NoResults />}
 
         <div className="polls_items">
           <InfiniteScroll
             pageStart={1}
-            loadMore={(e) => this.props.onFetchPolls(e)}
+            loadMore={e => this.props.onFetchPolls(e)}
             hasMore={this.props.hasMore}
             loader={loader}
           >
-            { Items }
+            {Items}
           </InfiniteScroll>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default connect(
     poll: _.get(state, 'poll.data', {}),
     loading: _.get(state, 'poll.loading', true)
   }),
-  (dispatch) => ({
+  dispatch => ({
     onCleanPoll: _ => dispatch(poll.fetch.clean()),
     onVote: choiceId => dispatch(poll.update.request(choiceId)),
     onFetchPoll: questionId => dispatch(poll.fetch.request(questionId))

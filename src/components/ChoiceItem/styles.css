@@ -1,9 +1,10 @@
 div .poll__choice_item {
   cursor: pointer;
   margin-bottom: 5px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 
 .poll__choice_item.poll__choice_selected {
@@ -20,4 +21,3 @@ div .poll__choice_item {
     margin-left: 15%;
   }
 }
-

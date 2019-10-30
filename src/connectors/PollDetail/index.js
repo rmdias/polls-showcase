@@ -38,7 +38,10 @@ class PollDetail extends PureComponent {
   vote() {
     this.props.onVote(this.state.selectedChoice)
 
-    setTimeout(() => this.setState((state, props) => ({ selectedChoice: '' })), 500)
+    setTimeout(
+      () => this.setState((state, props) => ({ selectedChoice: '' })),
+      500
+    )
   }
 
   isSelectedChoice(choice) {
@@ -55,42 +58,59 @@ class PollDetail extends PureComponent {
 
   render() {
     const showLoader = this.props.loading && !this.props.poll.question
-    const loader = <CircularLoader className="polls__loader" key={0} kind="primary" size={50} border={1} />
-    const totalVotes = this.props.poll.choices && this.props.poll.choices.reduce((acc, value) => acc += value.votes, 0)
-    const biggerNumber = this.props.poll.choices && this.props.poll.choices.sort((a, b) => a.votes + b.votes)[0].votes
-
-    const Items = this.props.poll.choices && this.props.poll.choices.map(choice => {
-      return <ChoiceItem
-        key={choice.url}
-        choice={choice}
-        active={this.isSelectedChoice(choice)}
-        totalvotes={totalVotes}
-        biggernumber={biggerNumber}
-        onClick={() => this.handleVotingSelection(choice.url)}
+    const loader = (
+      <CircularLoader
+        className="polls__loader"
+        key={0}
+        kind="primary"
+        size={50}
+        border={1}
       />
-    })
+    )
+    const totalVotes =
+      this.props.poll.choices &&
+      this.props.poll.choices.reduce((acc, value) => (acc += value.votes), 0)
+    const biggerNumber =
+      this.props.poll.choices &&
+      this.props.poll.choices.sort((a, b) => a.votes + b.votes)[0].votes
+
+    const Items =
+      this.props.poll.choices &&
+      this.props.poll.choices.map(choice => {
+        return (
+          <ChoiceItem
+            key={choice.url}
+            choice={choice}
+            totalvotes={totalVotes}
+            biggernumber={biggerNumber}
+            active={this.isSelectedChoice(choice)}
+            onClick={() => this.handleVotingSelection(choice.url)}
+          />
+        )
+      })
 
     return (
       <div className="poll">
-        <Link className="back_to_polls" to="/">◄ Back</Link>
+        <Link className="back_to_polls" to="/">
+          ◄ Back
+        </Link>
         <h1>Question: {this.props.poll.question}</h1>
-        { showLoader && loader }
+        {showLoader && loader}
 
-        <div className="poll__choices">
-          { Items }
-        </div>
+        <div className="poll__choices">{Items}</div>
 
-        { this.state.selectedChoice && <Button
-          kind="primary"
-          className="poll__voting_button"
-          promise={this.props.loading}
-          config={{
-            onClick: () => this.vote()
-          }}
+        {this.state.selectedChoice && (
+          <Button
+            kind="primary"
+            className="poll__voting_button"
+            promise={this.props.loading}
+            config={{
+              onClick: () => this.vote()
+            }}
           >
             save vote
           </Button>
-        }
+        )}
       </div>
     )
   }

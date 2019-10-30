@@ -6,7 +6,7 @@ import sagas from './sagas'
 import reducers from './reducers'
 import browserHistory from './history'
 
-const initialState = { }
+const initialState = {}
 const sagaMiddleware = createSagaMiddleware()
 
 const params = [
@@ -16,7 +16,8 @@ const params = [
 
 // plugin https://github.com/zalmoxisus/redux-devtools-extension
 /* eslint no-underscore-dangle: 0 */
-const reduxDevBrowserApps = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const reduxDevBrowserApps =
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 if (reduxDevBrowserApps) {
   params.push(reduxDevBrowserApps)

@@ -25,10 +25,21 @@ export default class ChoiceItem extends PureComponent {
     return (
       <div onClick={this.props.onClick}>
         <Area className={`poll__choice_item ${active}`}>
-          <div><strong>{ this.props.choice.choice }</strong></div>
-          <div>{ this.props.choice.votes } votes</div>
-          <div>{ Math.floor(((this.props.choice.votes / this.props.totalvotes) || 0) * 100) }%</div>
-          <div className="poll__choice_percentage"><PercentageBar values={values} width={200}/></div>
+          <div>
+            <strong>{this.props.choice.choice}</strong>
+          </div>
+          <div>{this.props.choice.votes} votes</div>
+          <div>
+            {Math.floor(
+              (this.props.choice.votes / this.props.totalvotes || 0) * 100
+            )}
+            %
+          </div>
+          {this.props.choice.votes > 0 && (
+            <div className="poll__choice_percentage">
+              <PercentageBar values={values} width={200} />
+            </div>
+          )}
         </Area>
       </div>
     )
