@@ -6,7 +6,7 @@
     "axios": "^0.18.0",
     "connected-react-router": "^6.4.0",
     "history": "^4.9.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "luna-ui-lib": "^0.0.16",
     "moment": "^2.24.0",
     "react": "^16.8.6",
